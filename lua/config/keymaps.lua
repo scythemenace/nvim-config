@@ -48,3 +48,7 @@ end, opts)
 
 --ToggleTerminal
 keymap.set("n", "<C-t>", ":ToggleTerm<Return>")
+
+--Indent lines using tab
+keymap.set("v", "<tab>", ">")
+keymap.set("v", "<S-tab>", "<")
