@@ -57,6 +57,19 @@ return {
       -- setup must be called before loading
       vim.cmd.colorscheme("catppuccin") -- Uncomment if you need it as default
     end,
+    opts = {
+      integrations = {
+        native_lsp = {
+          enabled = true,
+          underlines = {
+            errors = { "undercurl" },
+            hints = { "undercurl" },
+            warnings = { "undercurl" },
+            information = { "undercurl" },
+          },
+        },
+      },
+    },
   },
   {
     "nvim-lualine/lualine.nvim",
